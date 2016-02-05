@@ -18,15 +18,18 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, #{name}"
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  first_char = s[0]
+  return true if !first_char.nil? and first_char.upcase =~ /[B-DF-HJ-NP-TV-Z]/
+  return false
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  return true if s == '0' or s =~ /^[01]*10*00$/
+  return false
 end
 
 # Part 3
